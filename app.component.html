@@ -1,0 +1,20 @@
+ Enter Name  
+            <input type="text" #name/> 
+         <button (click)="submitAction(name.value)" >Go</button>
+<hr/>
+{{allData.name}}
+<br/>
+possible Country
+
+<table>
+    
+    <tr *ngFor="let x of allData.country">
+        <td> country code {{ x.country_id}}</td>
+        <td>  probability{{ x.probability|percent:'2.2-2'}}</td>
+    </tr>
+
+</table>   
+
+
+
+ 
